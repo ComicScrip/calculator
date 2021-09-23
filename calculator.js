@@ -2,6 +2,7 @@ const firstValueInput = document.querySelector('#firstValueInput');
 const secondValueInput = document.querySelector('#secondValueInput');
 const operatorInput = document.querySelector('#operator');
 const calculateBtn = document.querySelector('#calculateBtn');
+const resultDiv = document.querySelector('#result');
 
 console.log(firstValueInput);
 console.log(secondValueInput);
@@ -30,5 +31,7 @@ calculateBtn.addEventListener('click', function () {
     result = firstValue / secondValue;
   }
 
-  console.log('result :', result);
+  console.log('result : ', result);
+
+  resultDiv.innerHTML = `${firstValue} ${operator} ${secondValue} = ${result}`;
 });
