@@ -7,3 +7,7 @@ console.log(firstValueInput);
 console.log(secondValueInput);
 console.log(operatorInput);
 console.log(calculateBtn);
+
+calculateBtn.addEventListener('click', function () {
+  console.log('computing the result...');
+});
