@@ -19,5 +19,16 @@ calculateBtn.addEventListener('click', function () {
   console.log('first value : ', firstValue);
   console.log('second value : ', secondValue);
   console.log('operator : ', operator);
-  console.log('result', result);
+
+  if (operator === '+') {
+    result = firstValue + secondValue;
+  } else if (operator === '-') {
+    result = firstValue - secondValue;
+  } else if (operator === 'x') {
+    result = firstValue * secondValue;
+  } else if (operator === '/') {
+    result = firstValue / secondValue;
+  }
+
+  console.log('result :', result);
 });
